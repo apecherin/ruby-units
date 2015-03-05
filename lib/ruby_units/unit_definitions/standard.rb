@@ -220,6 +220,11 @@ RubyUnits::Unit.define('gallon') do |gallon|
   gallon.aliases    = %w{gal gallon gallons}
 end
 
+RubyUnits::Unit.define('uk-gallon') do |uk_gallon|
+  uk_gallon.definition = RubyUnits::Unit.new('277.2 in^3')
+  uk_gallon.aliases    = %w{uk-gal uk-gallon uk-gallons}
+end
+
 RubyUnits::Unit.define('quart') do |quart|
   quart.definition  = RubyUnits::Unit.new('1/4 gal')
   quart.aliases     = %w{qt quart quarts}
